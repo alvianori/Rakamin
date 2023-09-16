@@ -1,0 +1,88 @@
+/* CSS untuk form registrasi yang berbentuk kartu */
+.form-container {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #007bff;
+}
+
+/* Gaya untuk tombol Submit */
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+  /* width: 100%; */
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* Gaya untuk tab dan isian input */
+.nav-link {
+  font-weight: bold;
+}
+
+/* Gaya untuk pesan kesalahan */
+.alert-danger {
+  margin-top: 10px;
+}
+
+/* Gaya untuk footer kartu */
+.card-footer {
+  text-align: center;
+  background-color: #f8f9fa;
+  border-top: 1px solid #dee2e6;
+  padding: 10px 0;
+  border-radius: 0 0 10px 10px;
+}
+
+/* CSS untuk tabel */
+.h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #007bff;
+}
+
+#tableData {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+#tableData caption {
+  text-align: left;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+#tableData thead {
+  background-color: #007bff !important;
+  color: #fff;
+}
+
+#tableData th,
+#tableData td {
+  text-align: center;
+  vertical-align: middle;
+}
+
+#tableData th {
+  font-weight: bold;
+}
+
+#tableData tbody tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+#tableData tbody tr:hover {
+  background-color: #e9ecef;
+}
