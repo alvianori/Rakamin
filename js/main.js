@@ -31,17 +31,18 @@ class DataController {
     let totalUmur = 0;
     let totalUangSaku = 0;
 
+    // looping foreach untuk setiap elemen pada array this.data
     this.data.forEach((item) => {
       totalUmur += item.umur;
       totalUangSaku += item.uangSaku;
     });
 
-    const rataRataUmur = totalUmur / numRows;
-    const rataRataUangSaku = totalUangSaku / numRows;
+    const rataRataUmur = (totalUmur / numRows).toFixed(2); // membatasi angka desimal menjadi dua digit.
+    const rataRataUangSaku = (totalUangSaku / numRows).toFixed(2); // membatasi angka desimal menjadi dua digit.
 
     return {
-      rataRataUmur: rataRataUmur,
-      rataRataUangSaku: rataRataUangSaku,
+      rataRataUmur: parseFloat(rataRataUmur), // Mengonversi kembali ke angka dari string
+      rataRataUangSaku: parseFloat(rataRataUangSaku), // Mengonversi kembali ke angka dari string
     };
   }
 }
